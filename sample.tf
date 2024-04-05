@@ -1,3 +1,12 @@
+terraform {
+  cloud {
+    organization = "Test-Abhinav"
+
+    workspaces {
+      name = "offsitelabs"
+    }
+  }
+}
 resource "null_resource" "my_null_source" {}
 
 resource "null_resource" "my_null_destination" {}
